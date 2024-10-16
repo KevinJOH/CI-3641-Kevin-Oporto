@@ -1,9 +1,3 @@
-/*
-	Kevin Oporto ; 13-11007
-	Lenguajes de Programación I
-	Examen I
-	Pregunta 1.b.i) Dados 3 enteros a, b y c calcula (a^b) mod c
-*/
 import kotlin.math.pow
 
 /*

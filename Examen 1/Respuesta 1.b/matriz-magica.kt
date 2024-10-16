@@ -1,11 +1,4 @@
 /*
-	Kevin Oporto ; 13-11007
-	Lenguajes de Programación I
-	Examen I
-	Pregunta 1.b.ii) Dada una matriz cuadrada, el programa calcula si la matriz es o no mágica
-*/
-
-/*
 	Para un cuadrado de tamaño nxn los numeros van desde 1 hasta n^2. La suma total es la suma de los primeros n^2 numeros
 	Suma = n^2(n^2 + 1) / 2. Al agregarle las diagonales, nuestra suma mágica nos quedará = n*(n^2 + 1) /2.
 	Ahora solo queda hacer la sumatoria de las filas, columnas y diagonales y si todas las sumas son iguales

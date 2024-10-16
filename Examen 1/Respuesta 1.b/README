@@ -1,0 +1,13 @@
+### Kevin Oporto [13-11007]
+### Lenguajes de Programacion I
+### Examen I
+### Respuesta 1.b
+
+# Descripcion
+	Como se pidió un lenguaje que comenzará con la inicial de mi nombre se eligió Kotlin
+
+	- potencia.kt: Respuesta a la pregunta 1.b.i (Dados 3 enteros a, b y c calcula (a^b) mod c)
+	- matriz-magica.kt: Respuesta a la pregunta 1.b.ii (Dada una matriz cuadrada, el programa calcula si la matriz es o no mágica)
+
+# Ejecucion
+	Las variables de entrada, están dentro del código, es decir, si se quieren evaluar otros casos hay que modificar las variables
