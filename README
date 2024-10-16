@@ -1,0 +1,25 @@
+### Kevin Oporto [13-11007]
+### Lenguajes de Programacion I
+### Examen I
+
+
+# Descripcion:
+	Se presentan diversas respuestas a las preguntas del examen nro 1, de Lenguajes de Programacion I
+	Como algunas están en lenguajes distintos, se dividió por carpetas, cada pregunta. Las preguntas
+	respondidas en este repositorio, son:
+	- 1.b.i						(Kotlin)
+	- 1.b.ii					(Kotlin)
+	- 3							(Python)
+	- 4							(Python)
+	- GOLF (Pregunta extra)		(Python)
+
+# Ejecución:
+	Se debe ingresar a cada carpeta y ejecutar cada programa por separado utilizando los compiladores
+	correspondientes.
+
+# Recomendaciones
+	Para algunos programas se hizo pruebas unitarias y de cobertura, como son en python se hizo uso de
+	pytest y coverage por lo que se recomienda instalarlo para verificar que las pruebas unitarias están 
+	correctas. Usar el comando:
+
+	> pip install pytest coverage

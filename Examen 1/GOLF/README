@@ -1,0 +1,28 @@
+### Kevin Oporto [13-11007]
+### Lenguajes de Programacion I
+### Examen I
+### Pregunta Extra GOLF
+
+## Descripción:
+Programa que calcula el numero de maldad propuesto por el villano prof. Ricardo Monascal.
+En el se definen 3 funciones:
+	- f: Calcula el número de fibotribonaccinacci
+	- N: Calcula el número de Narayana
+	- M: Calcula el número de maldad
+
+  # Solucion para el tiempo de ejecucion
+  Para evitar recalcular los mismos valores, sobre todo en la funcion fibo, se usó una memorización
+  afortunadamente python cuenta con un módulo (lru_cache de functools) y con esto se logró que para 
+  un 'n' grande el programa sigue calculando el numer de maldad en menos de 1 seg. ¡TOMA ESO!
+
+  # Recepción del argumento de entrada
+  Como el villano, además nos puso a competir colocando la menor cantidad de caracteres, se decidió
+  que la entrada del prorama (n) sea un argumento del sistema, con la intencion de usar menos caracteres.
+  Entonces en la fila 10 está la línea:
+	- n=50
+  50, es el número a calcular. Entonces si queremos calcular el número de maldad de x, debemos sustituir
+  ese 50, por x.
+
+  # Como ejecutar
+  De la misma manera que se invoca un programa en python:
+  	- > python golf.py
