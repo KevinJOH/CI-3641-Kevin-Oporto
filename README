@@ -7,11 +7,11 @@
 	Se presentan diversas respuestas a las preguntas del examen nro 1, de Lenguajes de Programacion I
 	Como algunas están en lenguajes distintos, se dividió por carpetas, cada pregunta. Las preguntas
 	respondidas en este repositorio, son:
-	- 1.b.i						(Kotlin)
-	- 1.b.ii					(Kotlin)
-	- 3							(Python)
-	- 4							(Python)
-	- GOLF (Pregunta extra)		(Python)
+	- 1.b.i			(Kotlin)
+	- 1.b.ii		(Kotlin)
+	- 3			(Python)
+	- 4			(Python)
+	- GOLF (Pregunta extra)	(Python)
 
 # Ejecución:
 	Se debe ingresar a cada carpeta y ejecutar cada programa por separado utilizando los compiladores
