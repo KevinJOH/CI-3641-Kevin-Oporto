@@ -1,0 +1,21 @@
+### Kevin Oporto [13-11007]
+### CI-3641 Lenguajes de Programacion
+### Examen 2 [Respuesta-2]
+
+## Descripcion:
+	Este programa maneja expresiones aritmeticas sobre enteros (suma, resta, multiplicacion y division) además de mostrar
+	una impresion en orden in-fijo dependiendo del orden que se le dé (PRE: preorder, POST: postorder).
+
+## Comandos necesarios:
+	# make install:
+	Instalará todas las dependencias necesarias, cabe destacar que todas son para que funcione pytest, así que 
+	si no es necesario correr el archivo de pruebas, no es necesario instalar las dependencias.
+
+	# make start:
+	Iniciará el programa.
+
+	# make tests:
+	Correrá el archivo de pruebas unitarias, pero debe haber instalado las dependencias.
+
+	# make coverage:
+	Ejecutará el reporte de cobertura de codigo.
