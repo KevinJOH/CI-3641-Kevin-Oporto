@@ -1,0 +1,27 @@
+### Kevin Oporto [13-11007]
+### CI-3641 Lenguajes de Programacion
+### Examen 2 [Respuesta-1]
+
+## Descripcion: 
+El programa count.m es la respuesta a la pregunta 1.b.i, donde: dada una funcion:
+f(n) = | n/2, si n es par
+	   | 3n+1, si n es impar
+count será la función que cuente las veces que se llama a esta funcion f(n) hasta que cualquier entero positivo n, dado llegue a 1.
+
+## Explicacion de funcionalidad y toma de decisiones para mergeSort.m (Respuesta 1.b.ii)
+- funcion merge_sort: Es una division recursiva, donde:
+	- Si la longitud de la lista es 1 o menor, entonces ya está ordenado y retorna la lista.
+	- De lo contrario se divide la lista en dos partes (left y right) y a cada mitad se hace una llamada recursiva de merge_sort hasta que 
+	el tamaño de la lista sea igual a 1.
+
+- funcion merge: Es la función que fusiona, es decir, combina dos listas ordenadas (left y right) en una sola lista ordenada:
+	- Compara los primeros elementos de left y right y añade el menor a result, y sigue así hasta que todos los elementos estén procesados.
+	- Si sobran elementos en alguna de las listas se agregan a result.
+
+Decisiones: 
+	- Para dividir la lista se usó la funcion floor, de octave.
+	- Uso de las llamadas recursivas para sub-dividir la lista hasta que tenga un elemento.
+	- Usar dos listas temporales (left y right) para ordenarlas desde que tienen un solo elemento y luego ir ordenando
+	estas listas, pero ya sería fusionar dos listas ordenadas.
+
+
