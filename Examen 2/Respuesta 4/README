@@ -1,0 +1,54 @@
+### Kevin Oporto [13-11007]
+### CI-3641 Lenguajes de Programacion
+### Examen 2 [Respuesta-4]
+
+## Descripcion:
+Tenemos 3 funciones en el archivo F_35:
+	- F_35_rec: Corresponde a la version F_35 recursiva.
+	- F_35_rec_tail: Corresponde a la version F_35 recursiva de cola.
+	- F_35_iter_tail: Corresponde a la version F_35 iterativa de cola.
+
+## Elementos correspondientes entre F_35_rec_tail y F_35_iter_tail
+- Acumulador (ac):
+	- Version recursiva: Se pasa como argumento a los valores calculados.
+	- Version iterativa: Se inicializa al comenzar la funcion y se utiliza para alamacenar valores y acceder a los valores calculados.
+
+- Condicion base:
+	Como en la version iterativa no comenzamos a trabajar con un nuevo n, en cada llamada, se tuvo que crear una variable current, 
+	la cual, cambia según la iteracion. Entonces, la condicion base, para cada una sería:
+	- Version recursiva: if (0<= n < 15): return n
+	- Version iterativa: if (0<= current < 15): ac[current] = current
+
+- Llamadas recursivas:
+	Evidentemente en la version iterativa no se hacen llamadas recursivas, pero se simulan y nos quedaría de la siguiente manera:
+	- Version recursiva: ac[n] = F_35_rec_tail(n-5, ac) + F_35_rec_tail(n-10, ac) + F_35_rec_tail(n-15, ac)
+	- Version iterativa: El uso de la pila (stack) gestiona los valores de n que necesitan ser procesados y luego calcular ac[current]
+	cuando todos los valores necesarios esten calculados o disponibles.
+
+## Analisis comparativo entre las 3 implementaciones realizadas
+Aprovechamos que estamos usando python y usamos sus funciones:
+	- Time: Para calcular el tiempo de ejecucion.
+	- Matplotlib: Para graficar los tiempos de ejecucion.
+
+Ademas de esto se hizo una nueva funcion calculate_time(func, n), que recibe una funcion y un n.
+luego generamos 3 arreglos para almacenar distintos tiempos de distintas n, para cada una de las funciones.
+Finalmente mostramos las gráficas y observamos que:
+- Analisis de código:
+	- F_35(Recursiva): Es la menos eficiente, en cuanto a tiempo y almacenamiento de memoria, ya que, al hacer tantas llamadas (n grande)
+	se acumulan demasiadas pilas en las numerosas llamadas.
+
+	- F_35(Recursiva de cola): Optimiza el número de pila y de llamadas, ya que utiliza el acumulador que almacena resultados parciales y asi
+	evita la acumulacion de llamadas recursivas.
+
+	- F_35(Iterativa de cola): Utiliza una pila manual, esto optimiza igual que la recursiva de cola, sin embargo los resultados se almacenan 
+	y reutilizan eficientemente.
+
+- Analisis de grafico:
+	Se observa que efectivamente F_35(Recursiva) es la menos eficiente, el gráfico crece muchisimo cuando n se hace más grande, por otro lado,
+	F_35(Rec de cola) y F_35(Iterativa de cola) están muy similares en términos de tiempo, sin embargo, al verlas a ellas dos solamente, nos 
+	damos cuenta que por muy poco es más rápida la funcion recursiva de cola, esto se debe a que la pila la maneja el sistema de una mejor 
+	manera que lo que se hizo de manera manual para la iterativa.
+
+Nota: Si quiere correr el programa deberá instalar:
+- tkinter: sudo apt-get install python3-tk
+- matplotlib: pip3 install matplotlib
