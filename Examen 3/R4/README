@@ -1,0 +1,20 @@
+### Kevin Oporto [13-11007]
+### CI-3641 Lenguajes de Programacion
+### Examen 3 [Respuesta-4]
+
+## Descripcion:
+	Se comparan 2 fuciones de sumar matrices, una lo hace por columna y la otra lo hace por filas, se toma un límite de almacenamiento
+	en memoria de 1GB (1024 * 1024 * 1024) para evitar problemas de almacenamiento (La matriz no cabe en la memoria). El programa está
+	escrito en C y devuelve un archivo .CSV con los datos de tiempo para cada ejecución, posteriormente con un archivo python y la ayuda
+	de la librería matplotlib, se grafican esos datos. Estos graficos se muestran durante la ejecución además de guardarse en una carpeta
+	"Graficos".
+
+## Comandos necesarios:
+- Primero se debe compilar el archivo sumMatrix.c:
+gcc -o sumMatrix sumMatrix.c
+
+- Luego ejecutar el programa:
+./sumMatrix
+
+- Es necesario esperar a que termine de ejecutarse el programa, para luego ejecutar el procesador de datos a graficos:
+python3 graphMatrix.py
