@@ -1,0 +1,6 @@
+Name                   Stmts   Miss  Cover
+------------------------------------------
+tableHandler.py           70     10    86%
+test_tableHandler.py      49      1    98%
+------------------------------------------
+TOTAL                    119     11    91%
